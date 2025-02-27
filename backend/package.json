@@ -1,0 +1,10 @@
+{
+  "name": "hackathon-backend",
+  "version": "1.0.0",
+  "description": "Backend API for hackathon tech stack",
+  "dependencies": {
+    "drizzle-orm": "^0.28.6",
+    "postgres": "^3.3.5"
+  }
+}
+

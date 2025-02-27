@@ -2,7 +2,9 @@
   "version": "4",
   "specifiers": {
     "jsr:@std/assert@1": "1.0.11",
-    "jsr:@std/internal@^1.0.5": "1.0.5"
+    "jsr:@std/internal@^1.0.5": "1.0.5",
+    "npm:drizzle-orm@~0.28.6": "0.28.6_postgres@3.4.5",
+    "npm:postgres@^3.3.5": "3.4.5"
   },
   "jsr": {
     "@std/assert@1.0.11": {
@@ -15,9 +17,26 @@
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
     }
   },
+  "npm": {
+    "drizzle-orm@0.28.6_postgres@3.4.5": {
+      "integrity": "sha512-yBe+F9htrlYER7uXgDJUQsTHFoIrI5yMm5A0bg0GiZ/kY5jNXTWoEy4KQtg35cE27sw1VbgzoMWHAgCckUUUww==",
+      "dependencies": [
+        "postgres"
+      ]
+    },
+    "postgres@3.4.5": {
+      "integrity": "sha512-cDWgoah1Gez9rN3H4165peY9qfpEo+SA61oQv65O3cRUE1pOEoJWwddwcqKE8XZYjbblOJlYDlLV4h67HrEVDg=="
+    }
+  },
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1"
-    ]
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:drizzle-orm@~0.28.6",
+        "npm:postgres@^3.3.5"
+      ]
+    }
   }
 }
